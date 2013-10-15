@@ -1,0 +1,13 @@
+<DialogUI@BoxLayout>:
+    size_hint: 0.8, 0.6
+    pos_hint: {'x' : 0.1, 'y' : 0.2}
+    orientation: 'vertical'
+    spacing: self.height * 0.2
+    Label:
+        text: "We " + root.yesno + " it!"
+        font_size: self.height * 0.2
+    Button:
+        text: "Ask to Do It"
+        font_size: self.height * 0.2
+        on_press: root.ask_user()
+        
